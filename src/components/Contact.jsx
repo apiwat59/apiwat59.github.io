@@ -10,10 +10,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
+        "service_4qtr6zb",
+        "template_toezja8",
         form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
+        "9kw8qr5c3FY2uctNI"
       )
       .then(
         (result) => {
@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-12 col-md-6">
             <div className="form-group">
-              <input type="text" name="name" placeholder="YOUR NAME" required />
+              <input type="text" name="name" placeholder="ชื่อของคุณ" required />
             </div>
           </div>
           {/* End .col */}
@@ -59,7 +59,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="user_email"
-                placeholder="YOUR EMAIL"
+                placeholder="อีเมล์ของคุณ"
                 required
               />
             </div>
@@ -71,7 +71,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="subject"
-                placeholder="YOUR SUBJECT"
+                placeholder="ห้วข้อ"
                 required
               />
             </div>
@@ -82,7 +82,7 @@ const Contact = () => {
             <div className="form-group">
               <textarea
                 name="message"
-                placeholder="YOUR MESSAGE"
+                placeholder="ข้อความของคุณ"
                 required
               ></textarea>
             </div>
@@ -91,7 +91,7 @@ const Contact = () => {
 
           <div className="col-12">
             <button type="submit" className="button">
-              <span className="button-text">Send Message</span>
+              <span className="button-text">ส่งข้อความถึงผม ;)</span>
               <span className="button-icon fa fa-send"></span>
             </button>
           </div>

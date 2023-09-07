@@ -11,12 +11,14 @@ import Contact from "../components/Contact";
 import Blog from "../components/blog/Blog";
 import SwitchDark from "../components/switch/SwitchDark";
 
+
+{/*{ icon: "fa-user", menuName: "About" },
+  { icon: "fa-briefcase", menuName: "Portfolio" },
+{ icon: "fa-comments", menuName: "Blog" }, */}
 const menuItem = [
   { icon: "fa-home", menuName: "Home" },
-  { icon: "fa-user", menuName: "About" },
-  { icon: "fa-briefcase", menuName: "Portfolio" },
   { icon: "fa-envelope-open", menuName: "Contact" },
-  { icon: "fa-comments", menuName: "Blog" },
+  
 ];
 
 const HomeDark = () => {
@@ -25,11 +27,11 @@ const HomeDark = () => {
   }, []);
   return (
     <Wrapper>
-      <SEO pageTitle={"Home Dark"} />
+      <SEO pageTitle={"GazDev System"} />
 
       <div className="yellow">
         <SwitchDark />
-        {/* End Switcher */}
+
         <Tabs>
           <div className="header">
             <TabList className=" icon-menu  revealator-slideup revealator-once revealator-delay1">
@@ -41,10 +43,8 @@ const HomeDark = () => {
               ))}
             </TabList>
           </div>
-          {/* End Menu Content */}
 
           <div className="tab-panel_list">
-            {/* Hero Content Starts */}
             <TabPanel className="home ">
               <div
                 className="container-fluid main-container container-home p-0 g-0"
@@ -55,10 +55,8 @@ const HomeDark = () => {
                 <Hero />
               </div>
             </TabPanel>
-            {/* Hero Content Ends */}
 
-            {/* About Content Starts */}
-            <TabPanel className="about">
+            {/* <TabPanel className="about">
               <div data-aos="fade-up" data-aos-duration="1200">
                 <div className="title-section text-start text-sm-center">
                   <h1>
@@ -66,13 +64,10 @@ const HomeDark = () => {
                   </h1>
                   <span className="title-bg">Resume</span>
                 </div>
-                {/* End title */}
                 <AboutMain />
               </div>
             </TabPanel>
-            {/* About Content Ends */}
 
-            {/* Portfolio Content Starts */}
             <TabPanel className="portfolio professional">
               <div
                 className="title-section text-start text-sm-center"
@@ -84,12 +79,9 @@ const HomeDark = () => {
                 </h1>
                 <span className="title-bg">works</span>
               </div>
-              {/* End title */}
               <Portfolio />
-            </TabPanel>
-            {/* Portfolio Content Ends */}
+            </TabPanel> */}
 
-            {/* Contact Content Starts */}
             <TabPanel className="contact">
               <div
                 className="title-section text-start text-sm-center"
@@ -107,37 +99,26 @@ const HomeDark = () => {
                 data-aos-duration="1200"
               >
                 <div className="row">
-                  {/*  Left Side Starts */}
                   <div className="col-12 col-lg-4">
                     <h3 className="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
-                      {"Don't"} be shy !
+                      ติดต่อได้ 24 ชม.
                     </h3>
                     <p className="open-sans-font mb-4">
-                      Feel free to get in touch with me. I am always open to
-                      discussing new projects, creative ideas or opportunities
-                      to be part of your visions.
+                      จะรีบตอบกลับให้ไวที่สุดครับ เเต่ถ้าด่วนมากโทรได้เลยครับ
                     </p>
                     <Address />
-                    {/* End Address */}
 
                     <Social />
-                    {/* End Social */}
                   </div>
-                  {/* Left Side Ends */}
 
-                  {/*  Contact Form Starts  */}
                   <div className="col-12 col-lg-8">
                     <Contact />
                   </div>
-                  {/*  Contact Form Ends */}
                 </div>
               </div>
-              {/* End .container */}
             </TabPanel>
-            {/* Contact Content Ends */}
 
-            {/* Blog Content Starts */}
-            <TabPanel className="blog">
+            {/* <TabPanel className="blog">
               <div
                 className="title-section text-start text-sm-center "
                 data-aos="fade-up"
@@ -153,14 +134,11 @@ const HomeDark = () => {
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
-                {/*  Articles Starts  */}
                 <div className="row pb-50">
                   <Blog />
                 </div>
-                {/* Articles Ends */}
               </div>
-            </TabPanel>
-            {/* Blog Content Ends */}
+            </TabPanel> */}
           </div>
         </Tabs>
       </div>

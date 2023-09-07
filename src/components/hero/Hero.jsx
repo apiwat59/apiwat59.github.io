@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import heroImgMobile from "../../../public/assets/img/hero/img-mobile.jpg";
+import heroImgMobile from "../../../public/assets/img/hero/hero300x300.png";
 import cancelImg from "../../../public/assets/img/cancel.svg";
 import AboutMain from "../about";
 import Image from "next/image";
 
 const heroContent = {
-  heroImage: "/assets/img/hero/dark.jpg",
+  heroImage: "/assets/img/hero/hero746x1020.png",
   heroMobileImage: heroImgMobile,
-  heroTitleName: "steve milner",
-  heroDesignation: "web designer",
-  heroDescriptions: `I'm a Tunisian based web designer & front‑end developer focused on
-  crafting clean & user‑friendly experiences, I am passionate about
-  building excellent software that improves the lives of those
-  around me.`,
-  heroBtn: "more about me",
+  heroTitleName: "Apiwat Paenyoi",
+  heroDesignation: "Full Stack DEv.",
+  heroDescriptions: `สิ่งที่ทำได้ดีที่สุดในชีวิตคือการกินเเละนอน เเละ น้ำหนักกำลังจะเเตะ 100 KG ครับ ;).`,
+  heroBtn: "อ",
 };
 
 const Hero = () => {
@@ -36,17 +33,63 @@ const Hero = () => {
               src={heroContent.heroMobileImage}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
-              // style={{width:'100%',height:'100%'}}
+            // style={{width:'100%',height:'100%'}}
             />
             <h1 className="text-uppercase poppins-font">
-              {"I'm"} {heroContent.heroTitleName}.
+              {heroContent.heroTitleName}
               <span>{heroContent.heroDesignation}</span>
             </h1>
             <p className="open-sans-font">{heroContent.heroDescriptions}</p>
+
+
+            <div className="social-icons-container d-flex  d-none d-lg-block">
+              <div className="row ">
+                <div className="col-auto">
+                  <a href="https://www.facebook.com/Aphiwat.Paenyoi/" className="mx-2">
+                    <div className="social-icon fa fa-facebook"></div>
+                  </a>
+                </div>
+                <div className="col-auto">
+                  <a href="mailto:apiwat.paen@gmail.com" className="mx-2">
+                    <div className="social-icon fa fa-envelope"></div>
+                  </a>
+                </div>
+                <div className="col-auto">
+                  <a href="tel:+66626419124" className="mx-2">
+                    <div className="social-icon fa fa-phone"></div>
+                  </a>
+                </div>
+                <div className="col-auto">
+                <a href="https://github.com/apiwat59" className="mx-2">
+                <div className="social-icon fa fa-github"></div>
+              </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="social-icons-container d-sm-flex d-lg-none justify-content-center">
+              <a href="https://www.facebook.com/Aphiwat.Paenyoi/" className="mx-2">
+                <div className="social-icon fa fa-facebook"></div>
+              </a>
+              <a href="mailto:apiwat.paen@gmail.com" className="mx-2">
+                <div className="social-icon fa fa-envelope"></div>
+              </a>
+              <a href="tel:+66626419124" className="mx-2">
+                <div className="social-icon fa fa-phone"></div>
+              </a>
+              <a href="https://github.com/apiwat59" className="mx-2">
+                <div className="social-icon fa fa-github"></div>
+              </a>
+            </div>
+
+
+            {/*
             <button className="button" onClick={toggleModalOne}>
               <span className="button-text">{heroContent.heroBtn}</span>
               <span className="button-icon fa fa-arrow-right"></span>
             </button>
+            */}
+
           </div>
         </div>
       </div>

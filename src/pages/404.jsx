@@ -18,6 +18,7 @@ const NotFound = () => {
           <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="50">
             The page you are looking for could not be found.
           </p>
+          
 
           <div
             className="button"
