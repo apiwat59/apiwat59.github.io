@@ -13,12 +13,12 @@ import SwitchDark from "../components/switch/SwitchDark";
 
 
 {/*{ icon: "fa-user", menuName: "About" },
-  { icon: "fa-briefcase", menuName: "Portfolio" },
+  
 { icon: "fa-comments", menuName: "Blog" }, */}
 const menuItem = [
   { icon: "fa-home", menuName: "Home" },
   { icon: "fa-envelope-open", menuName: "Contact" },
-  
+  { icon: "fa-briefcase", menuName: "Project" },
 ];
 
 const HomeDark = () => {
@@ -56,7 +56,7 @@ const HomeDark = () => {
               </div>
             </TabPanel>
 
-            {/* <TabPanel className="about">
+           <TabPanel className="about">
               <div data-aos="fade-up" data-aos-duration="1200">
                 <div className="title-section text-start text-sm-center">
                   <h1>
@@ -75,12 +75,12 @@ const HomeDark = () => {
                 data-aos-duration="1200"
               >
                 <h1>
-                  my <span>portfolio</span>
+                  my <span>project</span>
                 </h1>
                 <span className="title-bg">works</span>
               </div>
               <Portfolio />
-            </TabPanel> */}
+            </TabPanel> 
 
             <TabPanel className="contact">
               <div
