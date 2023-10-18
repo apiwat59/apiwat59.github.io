@@ -56,17 +56,6 @@ const HomeDark = () => {
               </div>
             </TabPanel>
 
-           <TabPanel className="about">
-              <div data-aos="fade-up" data-aos-duration="1200">
-                <div className="title-section text-start text-sm-center">
-                  <h1>
-                    ABOUT <span>ME</span>
-                  </h1>
-                  <span className="title-bg">Resume</span>
-                </div>
-                <AboutMain />
-              </div>
-            </TabPanel>
 
             <TabPanel className="portfolio professional">
               <div
