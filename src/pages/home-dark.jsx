@@ -17,8 +17,9 @@ import SwitchDark from "../components/switch/SwitchDark";
 { icon: "fa-comments", menuName: "Blog" }, */}
 const menuItem = [
   { icon: "fa-home", menuName: "Home" },
-  { icon: "fa-envelope-open", menuName: "Contact" },
   { icon: "fa-briefcase", menuName: "Project" },
+  { icon: "fa-envelope-open", menuName: "Contact" },
+  
 ];
 
 const HomeDark = () => {
