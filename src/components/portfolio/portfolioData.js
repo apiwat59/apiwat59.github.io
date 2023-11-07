@@ -20,7 +20,7 @@ const PortfolioData = [
   },
   {
     id: 2,
-    type: "OBS",
+    type: "OBS Remtoe Control",
     image: Image2,
     tag: ["Audiovisual"],
     delayAnimation: "100",
